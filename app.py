@@ -3,6 +3,13 @@ import numpy as np
 import pandas as pd
 import pickle
 
+st.write("✅ App started")
+
+st.write("⏳ Loading model...")
+
+ridge_model = pickle.load(open("models/ridge.pkl", "rb"))
+
+st.write("✅ Model loaded")
 # ── Load Models ───────────────────────────────────
 ridge_model = pickle.load(open("models/ridge.pkl", "rb"))
 scaler_model = pickle.load(open("models/scaler.pkl", "rb"))
