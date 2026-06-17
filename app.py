@@ -5,8 +5,7 @@ import pickle
 
 # ── App Initialization ─────────────────────────────
 
-application = Flask(__name__)
-app = application
+app = Flask(__name__)
 
 # ── Load Models ───────────────────────────────────
 
